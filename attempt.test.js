@@ -9,7 +9,7 @@ describe("Test attempt function", () => {
     const preffered = [1080];
 
     const result = attempt(avaible, allowed, preffered);
-    expect(result).toEqual([360]);
+    expect(result).toEqual([720]);
   });
 
   test("test 2", () => {
@@ -40,7 +40,7 @@ describe("Test attempt function", () => {
   });
 
   test("test 5", () => {
-    const avaible = [240, 720];
+    const avaible = [240, 720, 1080];
     const allowed = [240, 360, 720, 1080];
     const preffered = [240, 360];
 
